@@ -33,7 +33,7 @@ def main():
         
         # Draw rectangles around the detected hands
         for (x, y, w, h) in hands:
-            cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+            cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 4)
         
         # Display the frame with detected hands
         cv2.imshow('Hand Detection', frame)
